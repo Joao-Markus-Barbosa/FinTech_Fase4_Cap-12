@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Bank!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Minha CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<!-- header da página -->
+<header class="container mt-3 mb-5">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand nav-logo" href="#"><i class="fa-solid fa-building-columns"></i>
+                My Bank!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">My Bank!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resumo">Resumo Semanal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#meus-negocios">Meus Negócios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Login / Cadastro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#fazer-login">Login</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#fazer-cadastro">Cadastro</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<!-- Início - My Bank!  -->
+<section class="container my-5" id="my bank!">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 my-2 bg-dark div-inicio">
+            <h4 class="my-1 font mt-4">My Bank!</h4>
+            <h4 class="font my-4 ">Ferramenta excepcional, que oferece uma abordagem inigualável para o
+                gerenciamento financeiro.
+                Com uma interface intuitiva e recursos avançados, proporcionando aos usuários uma visão abrangente e
+                acessível de suas finan.</h4>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#fazer-cadastro" class="btn text-light botao">Venha
+                fazerpartei <i><i class="fa-solid fa-rocket icone"></i></i></a>
+        </div>
+        <div class="col-lg-6 text-center my-2">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval=".5s">
+                        <img src="./assets/image/carousel/img-1.jpg" class="d-block w-100" alt="imagem-ilustraçao-1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval=".5s">
+                        <img src="./assets/image/carousel/img-2.jpg" class="d-block w-100" alt="imagem-ilustraçao-2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/carousel/img-3.jpg" class="d-block w-100" alt="imagem-ilustraçao-3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fim - My Bank!  -->
+
+<!-- Início - Resumo Semanal  -->
+<section class="container my-5" id="resumo">
+    <div class="container text-center bg-dark  ">
+        <h3 class="display-4 my-4 text-light ">Resumo Semanal</h3>
+        <table class="table">
+            <thead class="text-center table-dark text-light">
+                <tr>
+                    <th>CONTAS</th>
+                    <th>N° TRANSAÇÕES</th>
+                    <th>ENTRADAS</th>
+                    <th>SAÍDAS</th>
+                    <th>VALOR DISPONÍVEL</th>
+                </tr>
+            </thead>
+            <tbody class="text-center text-light ">
+                <tr>
+                    <th>Conta corrente</th>
+                    <td>0</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <th>Conta poupança</th>
+                    <td>0</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <th>Cartão crédito</th>
+                    <td>0</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <th>Aplicações</th>
+                    <td>0</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>7
+<!-- Fim - Resumo Semanal  -->
+
+<!-- Início - Meus Negócios -->
+<section class="container my-5" id="meus-negocios">
+    <h4 class="display-4 my-4 text-light text-dark text-center">MEUS NEGÓCIOS</h4>
+    <div class="row d-flex align-items-center justify-content-center ">
+        <div class="col-lg-4 my-2 ">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-gamepad icon icon-control"></i>
+                <div class="card-body">
+                    <h5 class="card-title">METAS</h5>
+                    <p class="card-text">Objetivos fututos - Investimento - Propósitos - Intenções - Alvos... </p>
+                    <a href="#" class="btn btn-success">Minhas Metas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-plus icon icon-mais"></i>
+                <div class="card-body">
+                    <h5 class="card-title">ENTRADA</h5>
+                    <p class="card-text"> Registro de entrada de dinheiro - Banco - Negócios - Pagamentos...</p>
+                    <a href="#" class="btn btn-success">Registra Entrada</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-minus icon icon-menos"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SAÍDA</h5>
+                    <p class="card-text">Registro de saída de dinheiro - Banco - Negócios - Pagamentos...</p>
+                    <a href="#" class="btn btn-success">Registra Saída</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-coins icon icon-moedas"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SALDO TOTAL</h5>
+                    <p class="card-text"> Saldo disponível - Conta corrente - Conta poupança...</p>
+                    <a href="#" class="btn btn-success">Meu Saldo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-regular fa-credit-card icon icon-cartao"></i>
+                <div class="card-body">
+                    <h5 class="card-title">CRÉDITO</h5>
+                    <p class="card-text">Créditos - Cartões - Limites - Gastos - Finaciamentos... ?</p>
+                    <a href="#" class="btn btn-success">Meus Cartões</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-chart-line icon icon-grafico"></i>
+                <div class="card-body">
+                    <h5 class="card-title">APLICAÇÕES</h5>
+                    <p class="card-text">Aplicações - CDBs - Tesouro Direto - Ações - Outros...</p>
+                    <a href="#" class="btn btn-success">Minhas Aplicações</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fim - Meus Negócios  -->
+
+<!-- Início - Cadastro/Login - Janela Modal  -->
+<div>
+    <div class="modal fade" id="fazer-login" tabindex="-1" aria-labelledby="login-my-bank" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titulo-login-my-bank">My Bank!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                    <h4 class="display-6 my-3">Fazer login</h4>
+                    <form action="" id="logar" name="cadastro" method="post">
+                        <div class="row border rounded p-3">
+                            <div class="col-12 col-md-7 my-2">
+                                <label for="usuario" class="form-label">Informe seu usuário</label>
+                                <input type="text" class="form-control" id="usuario" placeholder="Usuário...">
+                            </div>
+                            <div class="col-12 col-md-7 my-2">
+                                <label for="senha" class="form-label">Informe sua senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="Senha...">
+                            </div>
+                            <div>
+                                <div class="col-12 col-md-6 my-2">
+                                    <input type="submit" class="btn btn-success" value="Fazer login">
+                                    <input type="submit" class="btn btn-secondary" value="Cancelar  ">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="fazer-cadastro" tabindex="-1" aria-labelledby="cadastro-my-bank" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titulo-cadastro">My Bank!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                    <h4 class="display-6 my-3">Criar Conta</h4>
+                    <form action="" id="titulo-2-cadastro" name="cadastro" method="post">
+                        <div class="row border rounded p-3">
+                            <div class="col-12 my-2">
+                                <label for="usuario" class="form-label">Nome completo</label>
+                                <input type="text" class="form-control" id="cadastrar-nome"
+                                    placeholder="Informar nome completo">
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <label for="email" class="form-label">Cadastrar e-mail</label>
+                                <input type="email" class="form-control" id="cadastrar-email"
+                                    placeholder="Ex: email@email.com">
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <label for="senha" class="form-label">Cadastrar usuário</label>
+                                <input type="password" class="form-control" id="cadastrar-usuario"
+                                    placeholder="Ex: user12345">
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <label for="senha" class="form-label">Cadastrar telefone</label>
+                                <input type="password" class="form-control" id="cadastrar-fone"
+                                    placeholder="Ex: (xx) 9999-9999">
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <label for="email" class="form-label">Cadastrar senha</label>
+                                <input type="email" class="form-control" id="cadastrar-senha"
+                                    placeholder="Ex: senha123">
+                            </div>
+                            <div class="col-12 col-md-6 my-2">
+                                <input type="submit" class="btn btn-success" value="Criar conta">
+                                <input type="submit" class="btn btn-secondary" value="Cancelar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fim - Cadastro/Login - Janela Modal  -->
+
+-----------------------------------------------------------------------------------------------------------------
+<!-- JavaScript  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<!-- JavaScript  -->
+</body>
+
+</html>
